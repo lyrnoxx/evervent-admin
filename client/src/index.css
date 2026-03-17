@@ -1,0 +1,173 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+}
+
+a {
+  color: #0f766e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  background: #111827;
+  color: #f9fafb;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.navbar a {
+  color: #f9fafb;
+}
+
+.badge {
+  background: #0f766e;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.auth-card,
+.panel {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  margin-bottom: 1rem;
+}
+
+.auth-card {
+  max-width: 420px;
+  margin: 2rem auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-weight: 600;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #0f766e;
+  background: #0f766e;
+  color: #fff;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+button.danger {
+  background: #b91c1c;
+  border-color: #b91c1c;
+  margin-left: 0.5rem;
+}
+
+.dashboard {
+  padding-top: 1rem;
+}
+
+.inline-form {
+  margin-top: 0.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 0.5rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  padding: 0.65rem;
+}
+
+.success {
+  color: #166534;
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  padding: 0.6rem;
+  border-radius: 8px;
+}
+
+.error {
+  color: #991b1b;
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  padding: 0.6rem;
+  border-radius: 8px;
+}
+
+.hint {
+  color: #374151;
+}
+
+@media (max-width: 700px) {
+  .inline-form {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
